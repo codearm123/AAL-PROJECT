@@ -1,4 +1,7 @@
-		<div id="footer">Copyright <?php echo date("Y")?>, Widget Corp and ME</div>
+     
+		<div id="footer"><img src="images/footer.jpg"/></div>
+
+		<div id="footer">Copyright <?php echo date("Y")?>, Internet Cepat</div>
 	</body>
 </html>
 <?php 
