@@ -33,7 +33,7 @@
 					}
 				   ?>
 				  </ul><br>
-				  + <a href="new_page.php?subject=<?php 
+				   <a href="new_page.php?subject=<?php 
 					echo urlencode($current_subject["id"]);?>">Add a new page to this subject</a>
 				</div>
 				
