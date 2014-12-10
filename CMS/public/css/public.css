@@ -67,9 +67,9 @@ opacity:0.99;
 	 color: #D4E6F4; clear: both; }
 
 /* Navigation */
-#navigation { float: left; height: 100%; width: 150px; padding: 0em 2em; color: #D4E6F4; }
+#navigation { display:inline-block;  height: 100%; width: 150px; padding: 0em 2em; color: #D4E6F4; }
 #navigation a { color: #D4E6F4; text-decoration: none; 
-margin-bottom: 8px;
+	margin-bottom: 8px;
     border-radius: 8px;
     padding-top: 8px;
     padding-right: 8px;
@@ -85,7 +85,7 @@ margin-bottom: 8px;
 }
 
 #navigation a:hover { color: #D4E6F4; text-decoration: none; 
-margin-bottom: 8px;
+	margin-bottom: 8px;
     border-radius: 8px;
     padding-top: 8px;
     padding-right: 8px;
@@ -104,11 +104,11 @@ ul.pages { padding-left: 2em; list-style: square; font-weight: normal;}
 .selected { font-weight: bold; }
 
 /* Page Content */
-#page { float: left; height: 100%; padding-left: 2em; vertical-align: top;}
+#page { float:right; height: 100%; padding-left: 2em; vertical-align: top;width:779px;}
 #page h2 { color: #8D0D19; margin-top: 1em;}
 #page h3 { color: #8D0D19; }
 .view-content {
- margin: 1em; padding: 1em; border: 1px solid #999;
+ margin: 1em; padding: 1em; border: 1px solid #999; width:300px;
 }
 div.message {
  border: 2px solid #8D0D19;

@@ -14,7 +14,7 @@
 		
 				  <div class="view-content">
 				  <h2><?php echo htmlentities($current_page["menu_name"]); ?></h2><br />
-				   <?php echo nl2br(htmlentities($current_page["content"])); ?><br />
+				   <?php echo nl2br htmlentities($current_page["content"]); ?><br />
 				  </div><br><br>
 				<?php } else {?>
 				 <p>Selamat Datang di Website Internet Cepat!</p>
