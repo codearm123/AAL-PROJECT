@@ -1,10 +1,4 @@
-/*
-Very Simple Splash Banners
-(c) Schien Dong, Antradar Software Inc.
 
-License: www.antradar.com/license.php
-Documentation: www.antradar.com/docs.php?article=splash-js
-*/
 
 function gid(d){return document.getElementById(d);}
 

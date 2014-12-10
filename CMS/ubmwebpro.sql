@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 08, 2014 at 03:28 PM
+-- Generation Time: Dec 10, 2014 at 05:08 PM
 -- Server version: 5.6.20
 -- PHP Version: 5.5.15
 
@@ -53,7 +53,17 @@ CREATE TABLE IF NOT EXISTS `pages` (
   `position` int(3) NOT NULL,
   `visible` tinyint(1) NOT NULL,
   `content` text NOT NULL
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=11 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=15 ;
+
+--
+-- Dumping data for table `pages`
+--
+
+INSERT INTO `pages` (`id`, `subject_id`, `menu_name`, `position`, `visible`, `content`) VALUES
+(11, 12, 'What is Internet Cepat?', 1, 1, 'Perseroan pada awalnya memiliki kegiatan usaha di bidang perdagangan barang dan jasa. Namun kegiatan usaha Perseroan berubah menjadi di bidang teknologi informasi dan jasa penyelenggaraan internet serta jasa pada umumnya.\r\nNamun terjadi penambahan kegiatan usaha, sehingga kegiatan usaha Perseroan sampai dengan saat ini adalah bergerak dalam bidang penyelenggaraan jaringan tetap berbasis kabel, jasa TV berlangganan, internet serta jasa konsultasi manajemen bisnis. Perseroan menjalankan bisnis internet dan multimedia demi mewujudkan visi dan misi untuk menjadi perusahaan megamedia di Indonesia.\r\n\r\nUntuk sasaran pasar, Perseroan membagi dua sasaran pasar, yaitu pasar konsumen dan pasar bisnis. Untuk pasar konsumen (consumer market), Perseroan menawarkan produk Internet berlabel FastNet, dan produk TV kabel berlangganan berlabel HomeCable. Sedangkan untuk pasar bisnis (business market) Perseroan menawarkan layanan data komunikasi berlabel DataComm, serta produk solusi korporasi lain seperti Media Sales, dan Corporate TV untuk HOTEL.\r\n\r\nTerus berkembang dan berinovasi, Perseroan terus mengerahkan kemampuan terbaik di bidang usahanya untuk menjadi yang pertama dan terdepan dalam layanan broadband dan media.\r\n\r\n'),
+(12, 12, 'Why Internet Cepat?', 2, 1, 'Visi dan misi Perseroan adalah menjadi penyedia jasa televisi berlangganan dan jasa layanan internet broadband berkecepatan tinggi di Indonesia dengan layanan dan solusi inovatif. Untuk mewujudkan visi dan misi ini, Perseroan mengoperasikan sistem kabel dua arah Hybrid Fiber Optic Coaxial Cable (”HFC”) dimana sistem tersebut merupakan teknologi yang menggunakan kabel serat optik dan kabel coaxial yang dapat digunakan sebagai media untuk menyalurkan program-program TV dan sebagai media bagi bandwidth yang besar yang dapat digunakan tidak hanya layanan internet tapi juga pengiriman data digital lainnya, seperti High Definition TV, 3D High Definition TV, Video on Demand, Home Banking, Home Shopping dan Interactive Games.\n\nSaat ini Perseroan menjadi penyedia jasa televisi berlangganan dan jasa layanan internet broadband berkecepatan tinggi di Indonesia yang mengoperasionalkan sistem kabel Hybrid Fiber Coaxial (“HFC”) dengan teknologi tinggi dan mampu mengoperasikan 860 MHz two-way broadband services. Perseroan telah memiliki jaringan lebih dari 1.312.970 home-passed terbentang di wilayah Jabodetabek, Bandung, Surabaya dan Bali.'),
+(13, 13, 'Ultimate Packet', 1, 1, 'download up to 1Gbps Rp 99.000/day'),
+(14, 13, 'Super Packet', 2, 1, 'download up to 500 mbps Rp 50.000/day');
 
 -- --------------------------------------------------------
 
@@ -114,7 +124,7 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
 -- AUTO_INCREMENT for table `pages`
 --
 ALTER TABLE `pages`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=15;
 --
 -- AUTO_INCREMENT for table `subjects`
 --
