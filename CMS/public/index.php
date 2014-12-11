@@ -10,7 +10,26 @@
 				<?php echo public_navigation($current_subject, $current_page); ?> <br>
 			</div>
 			<div id="page">
-				<?php if ($current_page) {?>
+			
+				<?php if(strcmp(htmlentities($current_page["menu_name"]),"Tinggalkan Pesan")==0){?>
+			              <div class="view-content">
+				  <h2>Tinggalkan Pesan Anda</h2><br /><br />
+				  
+				  
+				  
+				  
+				   <!--  Masukkan form disini yaaa....-->
+				   
+				   
+				   
+				   
+				   
+				   
+				   <br /></div><br><br>
+				
+				<?php } 
+				
+				else if ($current_page) {?>
 		
 				  <div class="view-content">
 				  <h2><?php echo htmlentities($current_page["menu_name"]); ?></h2><br />
