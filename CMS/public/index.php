@@ -14,21 +14,24 @@
 				<?php if(strcmp(htmlentities($current_page["menu_name"]),"Tinggalkan Pesan")==0){?>
 			              <div class="view-content">
 				  <h2>Tinggalkan Pesan Anda</h2><br /><br />
-				  <form action="insert.php" method="POST">
-					<label>Nama :</label>
+		<form action="insert.php" method="POST">
+					<label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Nama :</label>
 					<input type="text"
 						   name="nama"
 						   value=""/>
-					<br />
+					<br /><br />
+
 					<label>Alamat Email:</label>
 					<input type="text"
 						   name="email"
 						   value=""/>
-					<br />
-					<label>Pesan anda :</label><br>
+					<br /><br />
+					<label>&nbsp Pesan anda :</label>
 					<textarea name="pesan"></textarea><br />
 					<input type="submit"
-						   value="submit"/>
+						   value="submit" 
+						   onclick="window.alert('Terima kasih telah meninggalkan pesan. anda akan kembali ke menu utama')"
+						   />
 				   </form>
 				   <br /></div><br><br>
 				
