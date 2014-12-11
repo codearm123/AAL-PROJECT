@@ -64,7 +64,7 @@ opacity:0.99;
 #main { margin: 0px; padding: 0px; height: 600px; width: 100%; }
 
 #footer { height: 8em; margin: 0px; padding: 1em; text-align: center; 
-	 color: #D4E6F4; clear: both; }
+	 color: #D4E6F4; clear: both; margin-top:400px;}
 
 /* Navigation */
 #navigation { float: left; height: 100%; width: 150px; padding: 0em 2em; color: #D4E6F4; float:left;margin-left:10%}

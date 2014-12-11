@@ -1,5 +1,5 @@
 <?php 
- $connection = mysqli_connect("localhost", "root", "", "ubmwebpro");
+ $connection = mysqli_connect("localhost", "root", "", "ubmweb");
   if(mysqli_connect_errno()){
    die("Database connection failed: " . 
    mysqli_connect_error() . 
