@@ -6,25 +6,26 @@
 <?php $sql= "SELECT * FROM pesan";
 $hasil=mysqli_query($connection,$sql);?>
 <div id="main">
-<div id="navigation">
+
+<div class="view-content" align="center" style="margin-left:20%;margin-right:20%;">
 <table border='1'>
-	<tr>
-		<td>urutan</td>
+	<tr>		
+	<td>No.</td>
 		<td>nama</td>
 		<td>email</td>
 		<td>pesan</td>
 	</tr>
-<?
+<?php
 while($baris=mysqli_fetch_assoc($hasil)){
-echo "<tr>";
-echo "<td>" . $baris['urutan'] . "</td>";
-echo "<td>" . $baris['nama'] ."</td>";
-echo "<td>" .$baris['email']."</td>";
-echo "<td>" .$baris['pesan']."</td>";
-echo "<td>";
-echo "<a href='delete_proses.php?id=".$baris['urutan']."'> HAPUS</a></td>";
-echo "</tr>";}
+echo "<tr><td>" . $baris["urutan"] . "</td><td>" . $baris["nama"] . "</td><td>" . $baris["email"] . "</td><td>" . $baris["pesan"] . "</td><td><a href=delete_proses.php?id=" . $baris["urutan"] . "> HAPUS</a></td></tr>";}
 ?>
+</table>
+<div id="navigation">
+			 <br/>
+			 <a href="admin.php" >&laquo; Back to Admin Menu</a><br/>
+			</div>
 </div>
 </div>
+
 <?php include("../includes/layouts/footer.php"); ?>
+

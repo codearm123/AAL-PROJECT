@@ -23,8 +23,10 @@
 	<body background="images/background1.jpg" onload="rotate()"> 
 
  <div id="mybanner5" style="opacity: 0; display: block;"><img src="images/1.jpg" ></div> 
-
+<img src="uploads/logo.jpg" style="display:block; padding-left:40%; padding-top:5%; border:none;" >
 		<div id="header">
-			<h1>Internet Cepat <?php if ($layout_context == "admin") {
-			echo "Admin"; }?> </h1>
+		
+			<h1 style="padding-left:40%;">Internet Cepat <?php if ($layout_context == "admin") {
+			echo "Admin"; }?> </h1><br>
+			
 		</div>

@@ -59,7 +59,7 @@ list-style-type:none;
 opacity:0.99;
 }
 #header { height: 70px; margin: 0px; padding: 0px; text-align: left; 
-	 color: #D4E6F4; }
+	 color: black; }
 #header h1 { padding: 1em; margin: 0px;}
 #main { margin: 0px; padding: 0px; height: 600px; width: 100%; }
 

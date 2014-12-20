@@ -44,7 +44,9 @@
 				   <?php echo nl2br(htmlentities($current_page["content"])); ?><br />
 				  </div><br><br>
 				<?php } else {?>
+				<div class="view-content">
 				 <p>Selamat Datang di Website Internet Cepat!</p>
+				 </div>
 				<?php }?>	
 			</div>
 		</div>
