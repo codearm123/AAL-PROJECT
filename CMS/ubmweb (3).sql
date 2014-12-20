@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.2.11
+-- version 4.1.12
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 11, 2014 at 07:56 AM
--- Server version: 5.6.21
--- PHP Version: 5.6.3
+-- Generation Time: Dec 20, 2014 at 10:18 AM
+-- Server version: 5.6.16
+-- PHP Version: 5.5.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -27,10 +27,11 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE IF NOT EXISTS `admins` (
-`id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `username` varchar(50) NOT NULL,
-  `hashed_password` varchar(100) NOT NULL
-) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+  `hashed_password` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
 
 --
 -- Dumping data for table `admins`
@@ -43,17 +44,31 @@ INSERT INTO `admins` (`id`, `username`, `hashed_password`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `gallery`
+--
+
+CREATE TABLE IF NOT EXISTS `gallery` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(50) NOT NULL,
+  `file` text NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `pages`
 --
 
 CREATE TABLE IF NOT EXISTS `pages` (
-`id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `subject_id` int(11) NOT NULL,
   `menu_name` varchar(30) NOT NULL,
   `position` int(3) NOT NULL,
   `visible` tinyint(1) NOT NULL,
-  `content` text NOT NULL
-) ENGINE=MyISAM AUTO_INCREMENT=19 DEFAULT CHARSET=utf8;
+  `content` text NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=19 ;
 
 --
 -- Dumping data for table `pages`
@@ -76,11 +91,20 @@ INSERT INTO `pages` (`id`, `subject_id`, `menu_name`, `position`, `visible`, `co
 --
 
 CREATE TABLE IF NOT EXISTS `pesan` (
-`urutan` int(11) NOT NULL,
+  `urutan` int(11) NOT NULL AUTO_INCREMENT,
   `nama` char(25) NOT NULL,
   `email` varchar(50) NOT NULL,
-  `pesan` text NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+  `pesan` text NOT NULL,
+  PRIMARY KEY (`urutan`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
+
+--
+-- Dumping data for table `pesan`
+--
+
+INSERT INTO `pesan` (`urutan`, `nama`, `email`, `pesan`) VALUES
+(4, 'Arvin', 'vin.tearz@gmail.com', 'alalalalala'),
+(5, 'Indra', 'alalal@yaya.com', 'lakaksskskskks');
 
 -- --------------------------------------------------------
 
@@ -89,11 +113,12 @@ CREATE TABLE IF NOT EXISTS `pesan` (
 --
 
 CREATE TABLE IF NOT EXISTS `subjects` (
-`id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `menu_name` varchar(30) NOT NULL,
   `position` int(3) NOT NULL,
-  `visible` tinyint(1) NOT NULL
-) ENGINE=MyISAM AUTO_INCREMENT=16 DEFAULT CHARSET=utf8;
+  `visible` tinyint(1) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=16 ;
 
 --
 -- Dumping data for table `subjects`
@@ -106,58 +131,6 @@ INSERT INTO `subjects` (`id`, `menu_name`, `position`, `visible`) VALUES
 (14, 'FAQ', 4, 1),
 (15, 'Contact Us', 5, 1);
 
---
--- Indexes for dumped tables
---
-
---
--- Indexes for table `admins`
---
-ALTER TABLE `admins`
- ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `pages`
---
-ALTER TABLE `pages`
- ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `pesan`
---
-ALTER TABLE `pesan`
- ADD PRIMARY KEY (`urutan`);
-
---
--- Indexes for table `subjects`
---
-ALTER TABLE `subjects`
- ADD PRIMARY KEY (`id`);
-
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `admins`
---
-ALTER TABLE `admins`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
---
--- AUTO_INCREMENT for table `pages`
---
-ALTER TABLE `pages`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=19;
---
--- AUTO_INCREMENT for table `pesan`
---
-ALTER TABLE `pesan`
-MODIFY `urutan` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
---
--- AUTO_INCREMENT for table `subjects`
---
-ALTER TABLE `subjects`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=16;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

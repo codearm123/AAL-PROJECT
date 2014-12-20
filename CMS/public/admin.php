@@ -13,6 +13,8 @@
 				<ul>
 				  <li><a href="manage_content.php">Manage Website Content</a></li>
 				  <li><a href="manage_admin.php">Manage Admin Users</a></li>
+				  <li><a href="insert_logo.php">Manage Logo</a></li>
+				  <li><a href="lihat_pesan.php">View Message</a></li>
 				  <li><a href="logout.php">Logout</a></li>
 				</ul>
 			</div>
