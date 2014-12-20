@@ -48,6 +48,11 @@
 				 echo "<br>";
 				 echo $hash2;
 				?>
+				<br>
+				<div id="navigation">
+			 <br/>
+			 <a href="admin.php" >&laquo; Back to Admin Menu</a><br/>
+			</div>
 				</div>
 			</div><!--page-->	
 		</div><!--main-->

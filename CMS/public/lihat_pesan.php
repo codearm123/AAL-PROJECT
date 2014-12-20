@@ -17,7 +17,7 @@ $hasil=mysqli_query($connection,$sql);?>
 	</tr>
 <?php
 while($baris=mysqli_fetch_assoc($hasil)){
-echo "<tr><td>" . $baris["urutan"] . "</td><td>" . $baris["nama"] . "</td><td>" . $baris["email"] . "</td><td>" . $baris["pesan"] . "</td><td><a href=delete_proses.php?id=" . $baris["urutan"] . "> HAPUS</a></td></tr>";}
+echo "<tr><td>" . $baris["urutan"] . "</td><td>" . $baris["nama"] . "</td><td>" . $baris["email"] . "</td><td>" . $baris["pesan"] ."</tr>";}
 ?>
 </table>
 <div id="navigation">
