@@ -9,6 +9,7 @@
 		
 			<div class="view-content" align="center"  style="margin-left:20%;margin-right:20%;">
 				  <h2>Change Logo</h2><br /><br />
+				  (File maksimum 5 MB, hanya bisa menerima .jpg)
 		<form action="upload.php" method = "POST" enctype="multipart/form-data">
 		<input type ="file"
 		name="gbr"/>

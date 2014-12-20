@@ -12,6 +12,7 @@
 		 &nbsp;
 		</div><!--navigator-->
 		<div id="page">
+		<div class="view-content">
 				<?php echo message();?>
 				<h2>Manage Admin</h2>
 				<table>
@@ -47,6 +48,7 @@
 				 echo "<br>";
 				 echo $hash2;
 				?>
+				</div>
 			</div><!--page-->	
 		</div><!--main-->
 
