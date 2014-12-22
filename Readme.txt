@@ -11,8 +11,6 @@ password Cpanel: Aa123456
 id: admin
 pass: admin  
 
-
- 
 Anggota kelompok :
 
 Arvin Indra - 32130083
